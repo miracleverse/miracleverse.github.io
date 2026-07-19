@@ -22,6 +22,16 @@
       </div>`;
   }
 
+  function galleryHTML(c) {
+    if (!c.images || !c.images.length) return "";
+    const shots = c.images.map((img) => `
+      <figure class="shot">
+        <img src="${esc(img.src)}" alt="${esc(img.caption)}" loading="lazy">
+        <figcaption>${esc(img.caption)}</figcaption>
+      </figure>`).join("");
+    return `<div class="detail-gallery">${shots}</div>`;
+  }
+
   function detailHTML(c) {
     return `
       <div class="detail" data-detail-for="${c.id}">
@@ -30,6 +40,7 @@
           <div class="detail-block"><h4>Role</h4><p>${esc(c.role)}</p></div>
           <div class="detail-block"><h4>Impact</h4><p>${esc(c.impact)}</p></div>
         </div>
+        ${galleryHTML(c)}
         <div class="detail-close" data-close="${c.id}">← Close</div>
       </div>`;
   }
