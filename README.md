@@ -1,4 +1,4 @@
-# Andrey Salkov — Product Portfolio
+# Andrei Salkov — Product Portfolio
 
 Static site, no build step. Three files: `index.html`, `cases.js`, `script.js`.
 
