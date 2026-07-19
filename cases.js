@@ -60,7 +60,7 @@ const CASES = [
   },
   {
     id: "visotsky-mobile", company: "visotsky", tag: "Business Booster Platform",
-    title: "Business Booster Platform — Mobile (Tonnus)",
+    title: "Business Booster Platform (Mobile)",
     hook: "Extended the platform to mobile for 24/7 task and team management, including market and unit-economics analysis for expansion.",
     context: "Leaders needed to manage tasks, teams, and reporting outside the desktop app.",
     role: "Owned the mobile product line: scoped the feature set, analyzed the US/Europe/CIS market opportunity, and modeled unit economics for the expansion case.",
