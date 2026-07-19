@@ -85,7 +85,16 @@ const CASES = [
     context: "A portfolio strategy of many small, fast-shipping utility apps needed a delivery lead who could keep quality and pace consistent across very different products.",
     role: "Promoted from iOS Project Manager to Backend Project Manager for delivery performance; managed 5 Project/Product Managers across iOS, Android, and Backend; owned the shared backend platform and APIs.",
     impact: "40+ mobile apps and 4 internal CRM systems launched in under 5 months.",
-    scale: "Hidden-camera detector · math solver · resume builder · plant/mushroom ID · remote mouse · digital ruler"
+    scale: "Hidden-camera detector · math solver · resume builder · plant/mushroom ID · remote mouse · digital ruler",
+    images: [
+      { src: "images/appcake-digital-ruler.jpg", caption: "AR digital ruler & floor plan tool" },
+      { src: "images/appcake-math-solver.jpg", caption: "Math solver: learn & quiz" },
+      { src: "images/appcake-temp-mail.jpg", caption: "Temp Mail: disposable inbox" },
+      { src: "images/appcake-remote-mouse.jpg", caption: "Remote mouse & keyboard for Mac" },
+      { src: "images/appcake-resume-builder.jpg", caption: "Resume builder" },
+      { src: "images/appcake-mushroom-id.jpg", caption: "Mushroom identifier" },
+      { src: "images/appcake-plant-id.jpg", caption: "Plant identifier" }
+    ]
   },
   {
     id: "heartcore", company: "heartcore", tag: "0→1 Launch",
