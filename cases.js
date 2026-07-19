@@ -30,7 +30,11 @@ const CASES = [
     context: "Rapid user growth was pushing support load past what the existing manual team could sustain, with no headcount to spare.",
     role: "Owned the initiative end-to-end: structured knowledge from documentation, the codebase, and historical support conversations; designed the assistant's persona, tone, multilingual behavior (incl. Chinese), and safety guardrails.",
     impact: "85% of requests resolved autonomously. Support team size held flat through continued user growth.",
-    scale: "Multilingual · vector store · 3-month human-verified rollout"
+    scale: "Multilingual · vector store · 3-month human-verified rollout",
+    images: [
+      { src: "images/ai-support-flow.jpg", caption: "Support routing & AI assistant flow" },
+      { src: "images/ai-support-assistant-widget.jpg", caption: "AI Assistant answering a product question" }
+    ]
   },
   {
     id: "visotsky-ai-pipeline", company: "visotsky", tag: "AI Product Development",
