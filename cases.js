@@ -32,8 +32,8 @@ const CASES = [
     impact: "85% of requests resolved autonomously. Support team size held flat through continued user growth.",
     scale: "Multilingual · vector store · 3-month human-verified rollout",
     images: [
-      { src: "images/ai-support-flow.jpg", caption: "Support routing & AI assistant flow" },
-      { src: "images/ai-support-assistant-widget.jpg", caption: "AI Assistant answering a product question" }
+      { src: "images/ai-support-assistant-widget.jpg", caption: "AI Assistant answering a product question" },
+      { src: "images/ai-support-flow.jpg", caption: "Support routing & AI assistant flow" }
     ]
   },
   {
