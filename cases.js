@@ -153,7 +153,10 @@ const CASES = [
     context: "Members needed a single mobile home for their card, balance, Apple Wallet pass, transaction history, and rewards.",
     role: "Product owner across both apps, aligning feature parity and brand-specific differences.",
     impact: "Delivered the primary mobile channel for the program's 20M+ customer base.",
-    scale: "Rosneft (yellow) & BP Club (green) apps"
+    scale: "Rosneft (yellow) & BP Club (green) apps",
+    images: [
+      { src: "images/rosneft-bp-mobile-apps.jpg", caption: "App Store: АЗС Роснефть & BP Club" }
+    ]
   },
   {
     id: "rosneft-websites", company: "rosneft", tag: "Consumer Web",
