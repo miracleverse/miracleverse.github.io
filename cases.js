@@ -177,7 +177,12 @@ const CASES = [
     context: "The World Cup campaign needed an engaging, shareable activation beyond standard promotions.",
     role: "Owned the game from concept through full-cycle development, including 3D animation and audio.",
     impact: "Delivered as a flagship engagement piece of the national World Cup campaign.",
-    scale: "PvP & vs-computer modes · full 3D + sound"
+    scale: "PvP & vs-computer modes · full 3D + sound",
+    images: [
+      { src: "images/rosneft-game-intro.jpg", caption: "Choose your role: striker or goalkeeper" },
+      { src: "images/rosneft-game-penalty.jpg", caption: "Penalty shootout in 3D" },
+      { src: "images/rosneft-game-modes.jpg", caption: "Play modes: random opponent or with a friend" }
+    ]
   },
   {
     id: "rosneft-crm", company: "rosneft", tag: "Enterprise Infrastructure",
