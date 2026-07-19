@@ -43,7 +43,11 @@ const CASES = [
     context: "Engineering capacity was a hard ceiling on roadmap speed, with no budget to grow the team.",
     role: "Co-designed and continuously calibrated the pipeline (research → business spec → technical spec → implementation → testing → code review → merge). Personally used it to ship a full Project Management module, an LMS MVP, a management reporting module, and dozens of smaller features.",
     impact: "4× task throughput vs. the prior comparable period. Core engineering team reduced from 5 to 2 without a drop in release stability.",
-    scale: "Verified 4× throughput · 5→2 engineers · dozens of shipped features"
+    scale: "Verified 4× throughput · 5→2 engineers · dozens of shipped features",
+    images: [
+      { src: "images/ai-pipeline-ci-cd.jpg", caption: "CI/CD pipeline: build, gates, and deploy" },
+      { src: "images/ai-pipeline-dev-workflow.jpg", caption: "Dev workflow: Jira to production" }
+    ]
   },
   {
     id: "visotsky-web", company: "visotsky", tag: "Business Booster Platform",
