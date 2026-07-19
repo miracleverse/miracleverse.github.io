@@ -203,7 +203,10 @@ const CASES = [
     context: "The program needed a cashback/privilege product built jointly with banking partners to extend its reach.",
     role: "Owned the partnership product from launch through growth, coordinating with bank partners on card design and terms.",
     impact: "Extended the loyalty ecosystem into co-branded banking products with several partner banks.",
-    scale: "Partner banks incl. MKB, RSHB, VBRR"
+    scale: "Partner banks incl. MKB, RSHB, VBRR",
+    images: [
+      { src: "images/rosneft-cobrand-cards.jpg", caption: "Loyalty cards & partner banks: DVB, MKB, VBRR, RSHB" }
+    ]
   },
   {
     id: "rosneft-partner-network", company: "rosneft", tag: "Partnerships",
