@@ -191,7 +191,10 @@ const CASES = [
     context: "The program's data and campaign infrastructure needed to move onto an enterprise-grade CRM/analytics stack capable of predictive personalization.",
     role: "Led the migration from Oracle to SAP Hybris Marketing, plus Terrasoft bpm'online and Polymatica analytics, across a 60-person team; separately secured $1M in VP-level budget approval for the related processing-center replacement.",
     impact: "Enabled predictive, card-linked personalization at national program scale.",
-    scale: "60-person team · SAP Hybris · Terrasoft · Polymatica"
+    scale: "60-person team · SAP Hybris · Terrasoft · Polymatica",
+    images: [
+      { src: "images/rosneft-crm-stack.jpg", caption: "CRM & analytics stack: SAP Hybris, Polymatica, Terrasoft" }
+    ]
   },
   {
     id: "rosneft-cobrand", company: "rosneft", tag: "Partnerships",
