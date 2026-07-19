@@ -129,7 +129,10 @@ const CASES = [
     context: "Fuel payment still required a walk to the cashier; the goal was a genuinely contactless, in-car flow integrated directly with pump and till hardware.",
     role: "Led the product and a 25-person delivery team, integrating the mobile app with pump and point-of-sale systems and loyalty points.",
     impact: "Delivered as one of the first in-car contactless fuel payment experiences on the market — ahead of most competitors globally at the time.",
-    scale: "25-person team · pump & POS integration · loyalty points"
+    scale: "25-person team · pump & POS integration · loyalty points",
+    images: [
+      { src: "images/rosneft-mobile-fuel-payment-apps.jpg", caption: "In-car fuel payment: Яндекс.Заправки & Мир Привилегий" }
+    ]
   },
   {
     id: "rosneft-strategy", company: "rosneft", tag: "National Loyalty Program",
