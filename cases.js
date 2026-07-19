@@ -73,7 +73,10 @@ const CASES = [
     context: "Leaders needed to manage tasks, teams, and reporting outside the desktop app.",
     role: "Owned the mobile product line: scoped the feature set, analyzed the US/Europe/CIS market opportunity, and modeled unit economics for the expansion case.",
     impact: "Shipped as part of the broader Business Booster growth behind the platform's ~20× ARR increase.",
-    scale: "iOS & Android · task list, chat, calendar, company profile"
+    scale: "iOS & Android · task list, chat, calendar, company profile",
+    images: [
+      { src: "images/mobile-app-store-screens.jpg", caption: "App Store screens: tasks, metrics, and approvals" }
+    ]
   },
   {
     id: "appcake-ios", company: "appcake", tag: "Fast MVP Launches",
