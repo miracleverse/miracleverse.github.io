@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrey Salkov — Head of Product</title>
+<meta name="description" content="Head of Product · 14+ years · Enterprise scale to AI-native startup execution.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220;
+    --bg-soft:#0F1A2E;
+    --surface:#132038;
+    --surface-hover:#182746;
+    --line:#26364F;
+    --line-soft:#1C2A42;
+    --brass:#C9A24B;
+    --brass-soft:#8C7239;
+    --steel:#5B7A9D;
+    --text:#F3EFE6;
+    --text-dim:#9AA7C2;
+    --text-faint:#5E6E8C;
+    --serif:'Playfair Display', Georgia, serif;
+    --sans:'Inter', -apple-system, sans-serif;
+    --mono:'IBM Plex Mono', 'SFMono-Regular', monospace;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  :focus-visible{outline:2px solid var(--brass); outline-offset:3px;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:96px 0 72px;
+    background:
+      radial-gradient(ellipse 900px 500px at 82% -10%, rgba(201,162,75,0.10), transparent 60%),
+      linear-gradient(160deg, var(--bg) 0%, var(--bg-soft) 60%, #14233D 100%);
+    border-bottom:1px solid var(--line-soft);
+    overflow:hidden;
+  }
+  .hero-pipeline{position:absolute; top:54px; left:0; right:0; height:40px; opacity:0.9; pointer-events:none;}
+  .eyebrow{
+    font-family:var(--mono); font-size:12.5px; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--brass); margin-bottom:22px; display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:''; width:22px; height:1px; background:var(--brass-soft); display:inline-block;}
+  h1{
+    font-family:var(--serif); font-weight:700; font-size:clamp(34px,5vw,56px);
+    line-height:1.08; max-width:16ch; color:var(--text); margin-bottom:22px;
+  }
+  h1 em{font-style:italic; color:var(--brass); font-weight:600;}
+  .hero-sub{
+    font-size:17.5px; color:var(--text-dim); max-width:56ch; margin-bottom:36px; line-height:1.65;
+  }
+  .hero-links{display:flex; flex-wrap:wrap; gap:14px; align-items:center;}
+  .btn{
+    font-family:var(--sans); font-weight:600; font-size:14.5px;
+    padding:12px 22px; border-radius:3px; text-decoration:none;
+    display:inline-flex; align-items:center; gap:8px; transition:all .15s ease;
+    border:1px solid var(--line);
+  }
+  .btn-primary{background:var(--brass); color:#161005; border-color:var(--brass);}
+  .btn-primary:hover{background:#DCB863;}
+  .btn-ghost{color:var(--text-dim); background:transparent;}
+  .btn-ghost:hover{color:var(--text); border-color:var(--text-dim);}
+
+  .stats{display:flex; flex-wrap:wrap; gap:0; margin-top:56px; border-top:1px solid var(--line-soft);}
+  .stat{flex:1 1 160px; padding:22px 26px 0; border-right:1px solid var(--line-soft);}
+  .stat:last-child{border-right:none;}
+  .stat-num{font-family:var(--serif); font-size:28px; color:var(--text); font-weight:700;}
+  .stat-label{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); letter-spacing:.04em; margin-top:4px; text-transform:uppercase;}
+
+  /* ---------- FILTER ---------- */
+  .filter-bar{
+    position:sticky; top:0; z-index:20;
+    background:rgba(11,18,32,0.92); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-soft);
+    padding:18px 0;
+  }
+  .filter-row{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
+  .filter-label{font-family:var(--mono); font-size:11px; color:var(--text-faint); letter-spacing:.08em; text-transform:uppercase; margin-right:6px;}
+  .chip{
+    font-family:var(--mono); font-size:12.5px; padding:8px 14px; border-radius:20px;
+    border:1px solid var(--line); color:var(--text-dim); background:transparent; cursor:pointer;
+    transition:all .15s ease; white-space:nowrap;
+  }
+  .chip:hover{border-color:var(--brass-soft); color:var(--text);}
+  .chip.active{background:var(--brass); border-color:var(--brass); color:#161005; font-weight:600;}
+
+  /* ---------- CASE GRID ---------- */
+  .section{padding:56px 0 100px;}
+  .company-group{margin-bottom:52px;}
+  .company-head{
+    display:flex; align-items:baseline; gap:14px; margin-bottom:6px;
+    padding-bottom:14px; border-bottom:1px solid var(--line-soft);
+  }
+  .company-name{font-family:var(--serif); font-size:22px; font-weight:700;}
+  .company-role{font-family:var(--mono); font-size:12.5px; color:var(--brass);}
+  .company-dates{font-family:var(--mono); font-size:12px; color:var(--text-faint); margin-left:auto;}
+
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
+    gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); margin-top:1px;
+  }
+  .card{
+    background:var(--surface); padding:26px 24px; cursor:pointer; transition:background .15s ease;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .card:hover{background:var(--surface-hover);}
+  .card-tag{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--steel);}
+  .card-title{font-family:var(--serif); font-size:19px; font-weight:700; line-height:1.3; color:var(--text);}
+  .card-hook{font-size:14px; color:var(--text-dim); line-height:1.55; flex-grow:1;}
+  .card-foot{display:flex; align-items:center; justify-content:space-between; margin-top:4px;}
+  .card-scale{font-family:var(--mono); font-size:11px; color:var(--text-faint);}
+  .card-expand{font-family:var(--mono); font-size:11px; color:var(--brass);}
+
+  /* ---------- DETAIL PANEL (inline expand) ---------- */
+  .detail{
+    grid-column:1/-1; background:#0E1830; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:34px 32px; display:none;
+  }
+  .detail.open{display:block;}
+  .detail-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px;}
+  @media (max-width:760px){.detail-grid{grid-template-columns:1fr;}}
+  .detail-block h4{
+    font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--brass); margin-bottom:10px;
+  }
+  .detail-block p{font-size:14.5px; color:var(--text-dim); line-height:1.65;}
+  .detail-close{
+    font-family:var(--mono); font-size:11px; color:var(--text-faint); margin-top:24px;
+    cursor:pointer; display:inline-block; border-top:1px solid var(--line-soft); padding-top:14px;
+  }
+  .detail-close:hover{color:var(--text);}
+  .detail-link{color:var(--brass); font-family:var(--mono); font-size:12.5px; text-decoration:underline;}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line-soft); padding:44px 0 60px;}
+  .footer-row{display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; align-items:center;}
+  .footer-name{font-family:var(--serif); font-size:18px; font-weight:700;}
+  .footer-links{display:flex; gap:22px; font-family:var(--mono); font-size:12.5px; color:var(--text-dim);}
+  .footer-links a:hover{color:var(--brass);}
+  .footer-note{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); margin-top:28px;}
+
+  @media (max-width:640px){
+    .wrap{padding:0 20px;}
+    .hero{padding:64px 0 48px;}
+    .stat{flex:1 1 45%; margin-top:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="hero-pipeline" viewBox="0 0 1180 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="20" x2="1180" y2="20" stroke="#2A3F5F" stroke-width="1"/>
+    <g fill="#5B7A9D" opacity="0.5">
+      <circle cx="10" cy="10" r="2.4"/><circle cx="34" cy="26" r="2"/><circle cx="58" cy="14" r="2.6"/>
+      <circle cx="86" cy="24" r="2"/><circle cx="116" cy="12" r="2.4"/>
+    </g>
+    <g fill="#C9A24B">
+      <circle cx="220" cy="20" r="3"/><circle cx="300" cy="20" r="3"/><circle cx="380" cy="20" r="3"/>
+      <circle cx="460" cy="20" r="3.4"/><circle cx="540" cy="20" r="3"/><circle cx="620" cy="20" r="3"/>
+      <circle cx="700" cy="20" r="3.4"/><circle cx="780" cy="20" r="3"/><circle cx="860" cy="20" r="3"/>
+      <circle cx="940" cy="20" r="3.4"/><circle cx="1020" cy="20" r="3"/><circle cx="1100" cy="20" r="3"/>
+      <circle cx="1170" cy="20" r="3"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow">Head of Product &nbsp;—&nbsp; Valencia, Spain / Remote</div>
+    <h1>From 0&rarr;1 execution to <em>AI-native</em> product scale</h1>
+    <p class="hero-sub">14+ years leading product strategy and monetization across enterprise and startup environments — from a 20M-user loyalty platform to a self-built AI-assisted development pipeline. Sixteen shipped projects, one throughline: turn ambiguity into a working system.</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="mailto:aa.salkov@gmail.com">Get in touch</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/andrey-salkov/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="#" id="cv-link">Download CV ↓</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">14+</div><div class="stat-label">Years experience</div></div>
+      <div class="stat"><div class="stat-num">20M+</div><div class="stat-label">Users at scale</div></div>
+      <div class="stat"><div class="stat-num">~20×</div><div class="stat-label">ARR growth, 2yrs</div></div>
+      <div class="stat"><div class="stat-num">16</div><div class="stat-label">Projects below</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="filter-bar">
+  <div class="wrap filter-row">
+    <span class="filter-label">Filter</span>
+    <button class="chip active" data-filter="all">All (16)</button>
+    <button class="chip" data-filter="visotsky">Visotsky Inc</button>
+    <button class="chip" data-filter="appcake">AppCake</button>
+    <button class="chip" data-filter="heartcore">HeartCore</button>
+    <button class="chip" data-filter="rosneft">Rosneft Loyalty</button>
+  </div>
+</nav>
+
+<main class="section">
+  <div class="wrap" id="case-container"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <div class="footer-name">Andrey Salkov</div>
+      <div class="footer-links">
+        <a href="mailto:aa.salkov@gmail.com">aa.salkov@gmail.com</a>
+        <a href="https://www.linkedin.com/in/andrey-salkov/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://t.me/SalkovAndrey" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div class="footer-note">Built with AI-assisted development · Valencia, Spain</div>
+  </div>
+</footer>
+
+<script src="cases.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
