@@ -53,7 +53,9 @@ const CASES = [
       { src: "images/web-login.jpg", caption: "Authorization screen" },
       { src: "images/web-dashboards.jpg", caption: "Dashboards & metrics" },
       { src: "images/web-myplan.jpg", caption: "Weekly task plan" },
-      { src: "images/web-schedule.jpg", caption: "Team schedule" }
+      { src: "images/web-schedule.jpg", caption: "Team schedule" },
+      { src: "images/web-tasks-calendar.jpg", caption: "Task calendar & reporting week" },
+      { src: "images/web-orgchart.jpg", caption: "Org chart" }
     ]
   },
   {
