@@ -227,6 +227,9 @@ const CASES = [
     context: "Two large, separate loyalty ecosystems — airline miles and fuel points — needed a reliable two-way exchange mechanism.",
     role: "Owned the partnership integration between the Rosneft/BP and Aeroflot Bonus programs.",
     impact: "Delivered a live points-exchange product connecting two national-scale loyalty ecosystems.",
-    scale: "API integration · Aeroflot Bonus"
+    scale: "API integration · Aeroflot Bonus",
+    images: [
+      { src: "images/rosneft-aeroflot-exchange.jpg", caption: "Miles-to-points exchange: Aeroflot Bonus & Rosneft" }
+    ]
   }
 ];
