@@ -1,6 +1,6 @@
 # Andrei Salkov — Product Portfolio
 
-Static site, no build step. Three files: `index.html`, `cases.js`, `script.js`.
+Static site. `cases.js` is the source of truth for all case-study content; `node build.js` generates the static case HTML and injects it into `index.html` (between the `<!-- CASES:START -->` / `<!-- CASES:END -->` markers) so crawlers, ATS tools, and link previews see the full content without running JavaScript. `script.js` only handles the filter chips and expand/collapse interaction at runtime.
 
 ## Deploy to GitHub Pages (5 minutes, no coding needed)
 
@@ -21,7 +21,13 @@ Static site, no build step. Three files: `index.html`, `cases.js`, `script.js`.
 
 ## Updating content later
 
-All case study text lives in `cases.js` — open it in any text editor (or ask Claude Code to edit it for you), change the text, and re-upload the file to GitHub (or use `git push` if you're comfortable with git). No rebuild step required — it's a plain static site.
+All case study text lives in `cases.js` — open it in any text editor (or ask Claude Code to edit it for you) and change the text. Then run:
+
+```
+node build.js
+```
+
+This regenerates the static case markup inside `index.html`. Commit and push (or re-upload) both `cases.js` and the updated `index.html` — if you skip `node build.js`, the live site will still show the old content since it no longer runs any rendering JavaScript.
 
 ## Custom domain (optional, later)
 
