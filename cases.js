@@ -48,7 +48,13 @@ const CASES = [
     context: "The platform — task, team, and business-process management for company leaders — had failed to find monetization or delivery stability across several prior teams.",
     role: "Rebuilt delivery process and product strategy from scratch; redesigned pricing into a tenure-based tiered model; ran full-cycle discovery-to-release using RICE/MoSCoW and JTBD research.",
     impact: "~20× ARR growth over 2 years without increasing churn; 2× MAU growth; monetization now covers ~60% of team operating costs.",
-    scale: "B2B SaaS · task management, org chart, knowledge base, reporting"
+    scale: "B2B SaaS · task management, org chart, knowledge base, reporting",
+    images: [
+      { src: "images/web-login.jpg", caption: "Login / authorization" },
+      { src: "images/web-myplan.jpg", caption: "Weekly task plan by function" },
+      { src: "images/web-dashboards.jpg", caption: "Metrics dashboards (figures redacted — NDA)" },
+      { src: "images/web-schedule.jpg", caption: "Team schedule grid (names redacted — privacy)" }
+    ]
   },
   {
     id: "visotsky-mobile", company: "visotsky", tag: "Business Booster Platform",
