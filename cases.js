@@ -165,7 +165,10 @@ const CASES = [
     context: "Members needed a full-featured web alternative to the mobile apps, including a station-locator map for BP.",
     role: "Owned requirements, vendor/stakeholder alignment, competitive analysis, and QA across both sites.",
     impact: "Delivered as the primary web channel supporting the national loyalty program.",
-    scale: "Rosneft & BP branded sites"
+    scale: "Rosneft & BP branded sites",
+    images: [
+      { src: "images/rosneft-websites.jpg", caption: "Rosneft & BP Club websites: offers, bonus account, station map" }
+    ]
   },
   {
     id: "rosneft-game", company: "rosneft", tag: "Marketing / Web Game",
