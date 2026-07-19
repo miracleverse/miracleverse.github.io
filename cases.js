@@ -141,7 +141,10 @@ const CASES = [
     context: "The program needed a coherent strategy across acquisition, engagement campaigns, and partner promotions at national scale.",
     role: "Directed strategy and campaign planning across a 20+ person marketing function.",
     impact: "Grew active loyalty membership 15% month-over-month and sustained engagement through the COVID-19 period.",
-    scale: "National fuel retail network"
+    scale: "National fuel retail network",
+    images: [
+      { src: "images/rosneft-strategy-campaigns.jpg", caption: "Marketing campaigns & engagement promotions" }
+    ]
   },
   {
     id: "rosneft-mobile-apps", company: "rosneft", tag: "Consumer Apps",
