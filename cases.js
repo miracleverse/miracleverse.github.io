@@ -117,7 +117,10 @@ const CASES = [
     context: "The loyalty program needed a mobile-first path to reduce reliance on physical cards at the pump and till.",
     role: "Owned the product end-to-end, including a high-stakes launch-week call that averted a holiday-season delay when an app store review put the go-live date at risk.",
     impact: "Delivered on time as Russia's first virtual loyalty card, ahead of a hard holiday-season deadline.",
-    scale: "Apple Wallet & Google Pay integration · BP Club"
+    scale: "Apple Wallet & Google Pay integration · BP Club",
+    images: [
+      { src: "images/rosneft-virtual-card-wallet.jpg", caption: "Virtual loyalty card in Apple Wallet — Rosneft & BP Club" }
+    ]
   },
   {
     id: "rosneft-mobile-fuel", company: "rosneft", tag: "Payments Infrastructure",
