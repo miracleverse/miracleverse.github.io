@@ -103,7 +103,12 @@ const CASES = [
     context: "An early-stage web3 (move-to-earn) app needed a product lead to set up process and ship a first version fast, part-time.",
     role: "Acting Head of Product on a fractional basis: roadmap, execution oversight, and management of 10 internal managers across design, marketing, and tech; owned early-stage budget and cost controls pre-revenue.",
     impact: "MVP delivered on a tight timeline, establishing the product and team processes the company built on afterward.",
-    scale: "Gamified habit-building · blockchain rewards & NFTs"
+    scale: "Gamified habit-building · blockchain rewards & NFTs",
+    images: [
+      { src: "images/heartcore-intro.jpg", caption: "Landing page: Get Healthier and Earn" },
+      { src: "images/heartcore-app-progress.jpg", caption: "App: seasonal progress & rewards" },
+      { src: "images/heartcore-nft-utilities.jpg", caption: "NFT tracksuits and their utilities" }
+    ]
   },
   {
     id: "rosneft-virtual-card", company: "rosneft", tag: "National Loyalty Program",
