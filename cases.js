@@ -215,7 +215,10 @@ const CASES = [
     context: "Growth required earning occasions beyond the pump — everyday retail, auto services, and lifestyle brands.",
     role: "Owned partner integration and growth strategy across the affiliate network.",
     impact: "Expanded the program's earning surface across a multi-category partner network.",
-    scale: "Retail, auto service & lifestyle partners"
+    scale: "Retail, auto service & lifestyle partners",
+    images: [
+      { src: "images/rosneft-partner-network.jpg", caption: "Affiliate partner network across retail, auto service & lifestyle" }
+    ]
   },
   {
     id: "rosneft-aeroflot", company: "rosneft", tag: "Partnerships",
