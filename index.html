@@ -154,9 +154,27 @@
   .shot{margin:0; display:flex; flex-direction:column; gap:8px;}
   .shot img{
     width:100%; display:block; border-radius:4px; border:1px solid var(--line-soft);
-    aspect-ratio:16/10; object-fit:cover; background:var(--surface);
+    aspect-ratio:16/10; object-fit:cover; background:var(--surface); cursor:zoom-in;
+    transition:border-color .15s ease;
   }
+  .shot img:hover{border-color:var(--brass-soft);}
   .shot figcaption{font-family:var(--mono); font-size:11px; color:var(--text-faint);}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; background:rgba(6,10,18,0.94); z-index:100;
+    display:none; align-items:center; justify-content:center; flex-direction:column;
+    padding:56px 24px; cursor:zoom-out;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox-img{max-width:90vw; max-height:78vh; display:block; border-radius:4px; box-shadow:0 24px 64px rgba(0,0,0,0.55); cursor:default;}
+  .lightbox-caption{font-family:var(--mono); font-size:12.5px; color:var(--text-dim); margin-top:18px; text-align:center;}
+  .lightbox-close{
+    position:absolute; top:20px; right:24px; background:transparent; border:1px solid var(--line);
+    color:var(--text); font-size:22px; line-height:1; width:40px; height:40px; border-radius:3px;
+    cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .15s ease;
+  }
+  .lightbox-close:hover{color:var(--brass); border-color:var(--brass-soft);}
 
   /* ---------- FOOTER ---------- */
   footer{border-top:1px solid var(--line-soft); padding:44px 0 60px;}
@@ -721,6 +739,12 @@
     <div class="footer-note">Built with AI-assisted development · Valencia, Spain</div>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
 
 <script src="script.js"></script>
 </body>

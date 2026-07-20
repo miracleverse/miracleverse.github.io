@@ -50,4 +50,36 @@
       applyFilter(chip.getAttribute("data-filter"));
     });
   });
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+
+  function openLightbox(img) {
+    lightboxImg.src = img.currentSrc || img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.alt;
+    lightbox.classList.add("open");
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    lightboxImg.src = "";
+  }
+
+  document.querySelectorAll(".shot img").forEach((img) => {
+    img.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openLightbox(img);
+    });
+  });
+
+  document.getElementById("lightbox-close").addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeLightbox();
+  });
+  lightbox.addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
 })();
