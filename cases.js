@@ -45,8 +45,7 @@ const CASES = [
     impact: "4× task throughput vs. the prior comparable period. Core engineering team reduced from 5 to 2 without a drop in release stability.",
     scale: "Verified 4× throughput · 5→2 engineers · dozens of shipped features",
     images: [
-      { src: "images/ai-pipeline-ci-cd.jpg", caption: "CI/CD pipeline: build, gates, and deploy" },
-      { src: "images/ai-pipeline-dev-workflow.jpg", caption: "Dev workflow: Jira to production" }
+      { src: "images/ai-pipeline-workflow-generic.jpg", caption: "Generic workflow: research to merge" }
     ]
   },
   {
