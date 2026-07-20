@@ -57,12 +57,19 @@ const CASES = [
     impact: "~20× ARR growth over 2 years without increasing churn; 2× MAU growth; monetization now covers ~60% of team operating costs.",
     scale: "B2B SaaS · task management, org chart, knowledge base, reporting",
     images: [
-      { src: "images/web-login.jpg", caption: "Authorization screen" },
-      { src: "images/web-dashboards.jpg", caption: "Dashboards & metrics" },
-      { src: "images/web-myplan.jpg", caption: "Weekly task plan" },
-      { src: "images/web-schedule.jpg", caption: "Team schedule" },
-      { src: "images/web-tasks-calendar.jpg", caption: "Task calendar & reporting week" },
-      { src: "images/web-orgchart.jpg", caption: "Org chart" }
+      { src: "images/web-01-orgchart.jpg", caption: "Org chart" },
+      { src: "images/web-02-messenger.jpg", caption: "Messenger" },
+      { src: "images/web-03-lms.jpg", caption: "Learning Management System (LMS)" },
+      { src: "images/web-04-projects-kanban.jpg", caption: "Projects: Kanban board" },
+      { src: "images/web-05-projects-gantt.jpg", caption: "Projects: Gantt chart" },
+      { src: "images/web-06-okr.jpg", caption: "Company goals (OKR)" },
+      { src: "images/web-07-tasks-calendar.jpg", caption: "Tasks: calendar view" },
+      { src: "images/web-08-tasks-weekly-plan.jpg", caption: "Tasks: weekly plan" },
+      { src: "images/web-09-schedule.jpg", caption: "Team schedule" },
+      { src: "images/web-10-reports.jpg", caption: "Reports dashboard" },
+      { src: "images/web-11-employees.jpg", caption: "Employees directory" },
+      { src: "images/web-12-knowledge-base.jpg", caption: "Knowledge base" },
+      { src: "images/web-13-storage.jpg", caption: "Storage management" }
     ]
   },
   {
