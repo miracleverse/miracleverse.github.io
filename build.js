@@ -5,6 +5,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const { COMPANIES, CASES } = require("./cases.js");
 
@@ -95,7 +96,17 @@ if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
 
 const before = html.slice(0, startIdx + START.length);
 const after = html.slice(endIdx);
-const output = `${before}\n${renderAll()}\n    ${after}`;
+let output = `${before}\n${renderAll()}\n    ${after}`;
+
+// Cache-bust script.js with a content hash so browsers that cached an older
+// script.js don't silently keep running stale interactivity code after deploy.
+const scriptPath = path.join(__dirname, "script.js");
+const scriptHash = crypto.createHash("sha256").update(fs.readFileSync(scriptPath)).digest("hex").slice(0, 10);
+output = output.replace(
+  /<script src="script\.js(?:\?v=[^"]*)?"><\/script>/,
+  `<script src="script.js?v=${scriptHash}"></script>`
+);
 
 fs.writeFileSync(indexPath, output);
 console.log(`build.js: injected ${CASES.length} cases (${companyOrder.length} groups) into index.html`);
+console.log(`build.js: script.js cache-busted as ?v=${scriptHash}`);
