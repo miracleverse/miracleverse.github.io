@@ -33,7 +33,7 @@ const CASES = [
     scale: "Multilingual · vector store · 3-month human-verified rollout",
     images: [
       { src: "images/ai-support-assistant-widget.jpg", caption: "AI Assistant answering a product question" },
-      { src: "images/ai-support-flow.jpg", caption: "Support routing & AI assistant flow" }
+      { src: "images/ai-support-flow.jpg", caption: "Generic architecture: knowledge base, vector store & escalation" }
     ]
   },
   {
