@@ -41,7 +41,7 @@ const CASES = [
     title: "AI-Assisted Development Pipeline",
     hook: "Co-designed a multi-agent development pipeline that let a 2-person engineering team out-ship what 5 engineers built the year before.",
     context: "Engineering capacity was a hard ceiling on roadmap speed, with no budget to grow the team.",
-    role: "Co-designed and continuously calibrated the pipeline (research → business spec → technical spec → implementation → testing → code review → merge). Personally used it to ship a full Project Management module, an LMS MVP, a management reporting module, and dozens of smaller features.",
+    role: "Co-designed and continuously calibrated the pipeline (research → business spec → technical spec → implementation → testing → code review → merge). Personally used it to ship a full Project Management module (ClickUp/Bitrix24 parity), an OKR tracking module, an LMS MVP, a management reporting module, and dozens of smaller features.",
     impact: "4× task throughput vs. the prior comparable period. Core engineering team reduced from 5 to 2 without a drop in release stability.",
     scale: "Verified 4× throughput · 5→2 engineers · dozens of shipped features",
     images: [
@@ -54,7 +54,7 @@ const CASES = [
     hook: "Took over an unstable, unmonetized SaaS platform under a monetize-or-shut-down mandate and rebuilt it into a growing product.",
     context: "The platform — task, team, and business-process management for company leaders — had failed to find monetization or delivery stability across several prior teams.",
     role: "Rebuilt delivery process and product strategy from scratch; redesigned pricing into a tenure-based tiered model; ran full-cycle discovery-to-release using RICE/MoSCoW and JTBD research.",
-    impact: "~20× ARR growth over 2 years without increasing churn; 2× MAU growth; monetization now covers ~60% of team operating costs.",
+    impact: "~20× ARR growth over 2 years without increasing churn, reaching 200+ paying B2B companies; 2× MAU growth driven by a weekly-engagement North Star Metric; monetization now covers ~60% of team operating costs.",
     scale: "B2B SaaS · task management, org chart, knowledge base, reporting",
     images: [
       { src: "images/web-01-orgchart.jpg", caption: "Org chart" },
